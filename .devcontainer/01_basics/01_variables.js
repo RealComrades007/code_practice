@@ -1,17 +1,26 @@
-const accountID = 14453
-let accoutEmail = "shekar@event.com"
-var accountPassword = "23423"
-accountCity = "Hyderabad"
+let accountID = 14453;
+let accountEmail = "shekar@event.com";
+let accountPassword = "23423";
+let accountCity = "Hyderabad";
 let accountState;
 
 // accountId = 2
+// accountID = 2;
 
-console.log(accountId);
-// prefer not to use var
-// because of issue in blovk scope and functional scope.
 
-accoutEmail = "abc@noemail.com"
-accountPassword = "234234"
-accountCity =  "mumbai"
+console.log(accountID);
 
-console.table([accountID, accoutEmail, accountPassword, accountCity, accountState])
+// Prefer not to use var
+// because of issues with block scope and function scope.
+
+accountEmail = "abc@noemail.com";
+accountPassword = "234234";
+accountCity = "Mumbai";
+
+console.table({
+  "Account ID": accountID,
+  "Account Email": accountEmail,
+  "Account Password": accountPassword,
+  "Account City": accountCity,
+  "Account State": accountState
+});
